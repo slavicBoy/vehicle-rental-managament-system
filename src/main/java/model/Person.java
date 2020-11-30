@@ -67,11 +67,7 @@ public class Person implements Serializable {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "localDate=" + localDate.getDayOfMonth() +
-                ", firstname='" + firstname + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", PESEL='" + PESEL + '\'' +
-                '}';
+        return "Osoba: Imię " + firstname + " nazwisko " + lastName
+        + " PESEL " + PESEL + " Data wypożyczenia pojazdu " + localDate.getDayOfMonth() + " / " + localDate.getMonth() + " / " + localDate.getYear() + "r";
     }
 }
